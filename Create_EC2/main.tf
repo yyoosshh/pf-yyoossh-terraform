@@ -9,12 +9,10 @@ resource "aws_instance" "example_ec2" {
 
 }
 
-
 # VPC #
 resource "aws_vpc" "main_vpc" {
     cidr_block = var.cidr_block  
 }
-
 
 # Subnet #
 resource "aws_subnet" "main_subnet" {
